@@ -1,5 +1,6 @@
 <?php 
 
+
 require_once("session.php");
 require_once("included_functions.php");
 require_once("database.php");
@@ -7,6 +8,7 @@ require_once("database.php");
 new_header("Delete Post");
 $mysqli = Database::dbConnect();
 $mysqli -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
 
 
 	if (($output = message()) !== null) {

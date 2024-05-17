@@ -4,6 +4,8 @@ require_once("session.php");
 require_once("included_functions.php");
 require_once("database.php");
 
+
+
 new_header("Create a new post"); 
 $mysqli = Database::dbConnect();
 $mysqli -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -33,6 +35,7 @@ echo "<center>";
 			$Image = $_POST["picture"];
 			$Location = $_POST["location"];
 			$Privacy = $_POST["privacy"];
+			
 			
 			date_default_timezone_set('America/Chicago');
 			$DateTime = date('Y-m-d H:i:s');
